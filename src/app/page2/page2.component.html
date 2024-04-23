@@ -1,0 +1,127 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 id="top" class="text-white">Global Score</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="caricamento"></th>
+                        <th class="caricamento">Global Score</th>
+                        <th class="caricamento">Process Name</th>
+                        <th class="caricamento">Score Process</th>
+                        <th class="caricamento">Score Test</th>
+                        <th class="caricamento">Step Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of globalScoreData; let i = index">
+                        <td class="blue">{{ i }}</td>
+                        <td class="ProgressBar">
+                            <div class="progress" [attr.aria-valuenow]="item.GlobalScore" aria-valuemin="0" aria-valuemax="12">
+                                <div class="progress-bar" role="progressbar" [style.width.%]="item.GlobalScore * 10" [attr.aria-valuenow]="item.GlobalScore" >
+                                </div>
+                            </div>
+                        </td>
+                        <td class="blue">{{ item.ProcessName }}</td>
+                        <td class="blue">{{ item.ScoreProcess }}</td>
+                        <td class="blue">{{ item.ScoreTest }}</td>
+                        <td class="blue">{{ item.StepScore }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col">
+            <h2 class="text-white">Step Score</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="caricamento"></th>
+                        <th class="caricamento">Global Scoring Test</th>
+                        <th class="caricamento">Process Name</th>
+                        <th class="caricamento">Score Process</th>
+                        <th class="caricamento">Score Stakeholder</th>
+                        <th class="caricamento">Score Step</th>
+                        <th class="caricamento">Score Test</th>
+                        <th class="caricamento">Step Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of stepScoreData; let i = index">
+                        <td class="blue">{{ i }}</td>
+                        <td class="ProgressBar">
+                            <div class="progress" [attr.aria-valuenow]="item.GlobalScoringTest" aria-valuemin="0" aria-valuemax="12">
+                                <div class="progress-bar" role="progressbar" [style.width.%]="item.GlobalScoringTest * 10" [attr.aria-valuenow]="item.GlobalScoringTest">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="blue">{{ item.ProcessName }}</td>
+                        <td class="blue">{{ item.ScoreProcess }}</td>
+                        <td class="blue">{{ item.ScoreStakeholder }}</td>
+                        <td class="blue">{{ item.ScoreStep }}</td>
+                        <td class="blue">{{ item.ScoreTest }}</td>
+                        <td class="blue">{{ item.StepName }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col">
+            <h2 class="text-white">Issue Log</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="caricamento"></th>
+                        <th class="caricamento">Error Description</th>
+                        <th class="caricamento">Error Type</th>
+                        <th class="caricamento">Process Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of issueLogData; let i = index">
+                        <td class="blue">{{ i }}</td>
+                        <td class="blue">{{ item.ErrorDescription }}</td>
+                        <td class="blue">{{ item.ErrorType }}</td>
+                        <td class="blue">{{ item.ProcessName }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col">
+            <h2 class="text-white">Test Book</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="caricamento"></th>
+                        <th class="caricamento">Context</th>
+                        <th class="caricamento">Description</th>
+                        <th class="caricamento">ID</th>
+                        <th class="caricamento">Notes</th>
+                        <th class="caricamento">Outcome</th>
+                        <th class="caricamento">Process Name</th>
+                        <th class="caricamento">Process Step</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of testBookData; let i = index">
+                        <td class="blue">{{ i }}</td>
+                        <td class="blue">{{ item.Context }}</td>
+                        <td class="blue">{{ item.Description }}</td>
+                        <td class="blue">{{ item.ID }}</td>
+                        <td class="blue">{{ item.Notes }}</td>
+                        <td class="blue">{{ item.Outcome }}</td>
+                        <td class="blue">{{ item.ProcessName }}</td>
+                        <td class="blue">{{ item.ProcessStep }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

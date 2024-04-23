@@ -1,0 +1,109 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.content-wrapper {
+  margin-left: 250px; /* Larghezza della sidebar */
+}
+
+  .sidebar-header {
+    padding: 15px;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-toggler {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+  }
+  .btn-primary{
+    background-color: #0083b8;
+    color: #fff;
+}
+
+#search{
+    background-color: #333 !important;
+    color: #fff !important;
+}
+#home{
+  color: #fff;
+    margin-top: 100px;
+}
+
+.header-brand {
+  color: white; /* Brand text color */
+  font-size: 1.5rem; /* Brand text size */
+  text-decoration: none; /* Remove default link underline */
+}
+
+.header-search {
+  display: flex; /* Flex layout */
+}
+
+.header-search .form-control {
+  margin-right: 10px; /* Add space between input and button */
+}
+
+.header-search .btn {
+  min-width: 80px; /* Set minimum width for button */
+}
+.header {
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Colore di sfondo dell'header */
+  z-index: 1000; /* Imposta lo z-index per garantire che l'header sia sopra gli altri contenuti */
+  padding: 10px; /* Aggiungi spazio interno all'header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra */
+  overflow-x: hidden; /* Nascondi l'overflow orizzontale dell'header */
+}
+
+.header-brand {
+  color: #000; /* Colore del testo dell'header */
+  font-size: 24px; /* Dimensione del carattere */
+  text-decoration: none; /* Rimuovi la sottolineatura dal link */
+}
+
+.d-flex {
+  display: flex; /* Usa flexbox per il layout */
+}
+
+.form-control {
+  flex: 1; /* Il campo di ricerca deve espandersi per riempire lo spazio disponibile */
+  margin-right: 10px; /* Aggiungi margine destro al campo di ricerca */
+}
+
+.btn {
+  margin-left: 10px; /* Aggiungi margine sinistro al pulsante di ricerca */
+}
+
+.sidebar-toggler {
+  background-color: #0083b8;
+  color: #fff;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar-toggler .sidebar-toggler-icon {
+  font-size: 1.5rem; /* Dimensione dell'icona */
+}

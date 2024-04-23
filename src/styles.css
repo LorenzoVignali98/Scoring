@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+#top{
+  margin-top: 20px;
+}
+table.table {
+  
+    background-color: #004d72 !important;
+    color: #fff; 
+  }
+  
+  table.table tbody tr {
+    background-color: #00172b;
+  }
+  
+  .text-white {
+    color: #fff; 
+  }
+  
+  body{
+    background-color: #00172b;
+  }
+  /* Stile per la tabella */
+table.table {
+    background-color: #004d72 !important;
+    color: #fff;
+    border-color: #00172b; /* Cambia il colore del bordo */
+  }
+  
+  /* Stile per le righe del corpo della tabella */
+  table.table tbody tr {
+    
+    background-color: #00172b;
+  }
+  
+  /* Stile per il testo bianco */
+  .thcolor {
+    color: #fff;
+    background-color: #004d72 !important;
+  }
+  
+  .text-black{
+    color: #fff !important;
+  }
+
+  .textC{
+    color: #fff;
+    background-color:  #00172b !important;
+  }
+
+.caricamento{
+    background-color: #0083b8 !important;
+    color: #fff !important;
+}
+.blue{
+    background-color: #00172b !important;
+    color:#fff !important;
+}
+
+#white{
+    color: #fff;
+}
+
+#white1{
+    color: #fff !important;
+}
+
+.header{
+    background-color: #0083b8 !important;
+}
+
+
+.ProgressBar {
+    align-items: center;
+    background-color: #00172b !important;
+    width: 200px; 
+  }
+  
+  .progress {
+    width: 140px;
+    height: 5px;
+     background-color: #007bff !important; 
+    border-radius: 4px; 
+  }
+  
+  .progress-bar {
+    background-color: #00172b; 
+    border-radius: 4px; 
+    transition: width 0.3s ease-in-out; 
+  }
+
+.table.table{border: 3px solid #152a3d;}

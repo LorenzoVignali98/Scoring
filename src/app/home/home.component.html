@@ -1,0 +1,31 @@
+
+<aside class="sidebar" [ngbCollapse]="isCollapsed">
+  <ul class="sidebar-nav">
+    <li class="nav-item">
+      <a class="nav-link" id="home" (click)="navigateToPage(2)" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="white" (click)="navigateToPage(4)">Page2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="white" (click)="navigateToPage(5)">Upload</a>
+    </li>
+  </ul>
+</aside>
+
+<header class="header">
+  <div class="sidebar-header">
+    <a class="header-brand" id="white" routerLink="/">
+      CoreUI
+    </a>
+    <a class="header-brand" id="white" routerLink="/">
+      <button class="btn btn-primary" type="button" (click)="toggleSidebar()">DashBoard</button>
+    </a>
+ 
+  </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" id="search" placeholder="" aria-label="Search">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+  </header>
+  

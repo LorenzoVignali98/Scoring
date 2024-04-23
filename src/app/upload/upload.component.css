@@ -1,0 +1,19 @@
+.container-fluid{
+    width: 40%;
+    margin-top: 18%;
+}
+.card-header {
+    color: #fff;
+    background-color: #0083b8 ;
+}
+.card-body{
+    color:#fff;
+    background-color: #00172b;
+}
+.btn-primary{
+    background-color: #0083b8;
+    color: #fff;
+}
+#uploadFile{
+    margin-top: 260px !important;
+}

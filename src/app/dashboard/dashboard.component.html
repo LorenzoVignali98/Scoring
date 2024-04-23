@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">Processi sotto monitoraggio</div>
+        <div class="card-body">
+          <h5 class="card-title">Info</h5>
+          <p class="card-text">{{ processiConformiData?.MonitoredProcesses }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-header">Processi a rischio alto</div>
+        <div class="card-body">
+          <h5 class="card-title">Success</h5>
+          <p class="card-text">{{ processiConformiData?.CompliantProcesses }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">Processi a rischio medio</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning</h5>
+          <p class="card-text">{{ processiRischioMedioData?.MediumRiskProcesses }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">Processi conformi</div>
+        <div class="card-body">
+          <h5 class="card-title">Danger</h5>
+          <p class="card-text">{{ processiRischioAltoData?.HighRiskProcesses }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" >
+        <h2 id="top" class="text-white" >Process Chart</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="caricamento"></th>
+                    <th class="caricamento">Process Chart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of processChart | keyvalue; index as i">
+                    <td class="blue">{{i}}</td>
+                    <td class="blue">{{ item.value }}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

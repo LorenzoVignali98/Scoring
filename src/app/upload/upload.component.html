@@ -1,0 +1,44 @@
+<!-- upload.component.html -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Scegli file</h4>
+          </div>
+          <div class="card-body">
+            <div class="custom-file mb-3">
+              <!-- Aggiunto attributo accept per accettare solo i formati specificati -->
+              <input type="file" class="custom-file-input" id="customFile" (change)="onFileSelected($event)"
+                accept=".json, .xlsx, .jpg, .jpeg">
+              <br><a>Limit 200MB per file, JSON, XLSX, JPG o JPEG.</a>
+              <label class="custom-file-label" for="customFile">
+              </label>
+            </div>
+            <!-- Aggiunto attributo max per impostare il limite di 200 MB -->
+            <input type="hidden" name="MAX_FILE_SIZE" value="200000000" />
+             <!-- Aggiunto pulsante per inviare il documento -->
+            <button class="btn btn-primary" (click)="uploadFile()">Invia documento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" [class.show]="showModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ modalTitle }}</h5>
+          <button type="button" class="btn-close" (click)="hideModal()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>{{ modalMessage }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="hideModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
